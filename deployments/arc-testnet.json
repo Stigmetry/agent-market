@@ -10,14 +10,14 @@
       "contract": "AgentIdentity",
       "standard": "ERC-8004",
       "address": "0x5Bef356f89425823FC7eebB3A6ED1A678F3b8233",
-      "repo": "sethoshi18/arc-agent-payments",
+      "repo": "Stigmetry/agent-payments",
       "explorerUrl": "https://testnet.arcscan.app/address/0x5Bef356f89425823FC7eebB3A6ED1A678F3b8233"
     },
     "layer2_commerce": {
       "contract": "AgentJob",
       "standard": "ERC-8183",
       "address": "0xD698d15F776279c0213444a779941e8E0Cbe5094",
-      "repo": "sethoshi18/arc-agent-payments",
+      "repo": "Stigmetry/agent-payments",
       "explorerUrl": "https://testnet.arcscan.app/address/0xD698d15F776279c0213444a779941e8E0Cbe5094"
     },
     "layer3_discovery": {

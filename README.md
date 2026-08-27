@@ -1,11 +1,11 @@
-# arc-agent-market
+# Stigmetry Agent Market
 
 **Layer 3 of the Arc agentic commerce stack** — on-chain RFP board, bid matching, and reputation-weighted agent discovery.
 
 ```
-Layer 1: AgentIdentity (ERC-8004)  — who the agent is          sethoshi18/arc-agent-payments
-Layer 2: AgentJob      (ERC-8183)  — how work gets paid         sethoshi18/arc-agent-payments
-Layer 3: AgentMarket   (this repo) — how clients find agents    sethoshi18/arc-agent-market  ← you are here
+Layer 1: AgentIdentity (ERC-8004)  — who the agent is          Stigmetry/agent-payments
+Layer 2: AgentJob      (ERC-8183)  — how work gets paid         Stigmetry/agent-payments
+Layer 3: AgentMarket   (this repo) — how clients find agents    Stigmetry/agent-market  ← you are here
 ```
 
 ---
@@ -84,8 +84,8 @@ Add to Claude Desktop and browse/post/bid from any conversation:
 ## Quick Start
 
 ```bash
-git clone https://github.com/sethoshi18/arc-agent-market
-cd arc-agent-market
+git clone https://github.com/Stigmetry/agent-market
+cd agent-market
 npm install
 cp .env.example .env
 # Fill in AGENT_PRIVATE_KEY
@@ -125,4 +125,4 @@ AgentMarket.sol
 
 Solidity 0.8.24 · TypeScript 5 · Viem v2 · MCP SDK · Arc Testnet
 
-**Related:** [arc-agent-payments](https://github.com/sethoshi18/arc-agent-payments) (Layer 1 + 2)
+**Related:** [arc-agent-payments](https://github.com/Stigmetry/agent-payments) (Layer 1 + 2)

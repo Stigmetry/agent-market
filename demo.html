@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>arc-agent-market demo — RFP Board + Bid Matching on Arc</title>
+  <title>Stigmetry Agent Market demo — RFP Board + Bid Matching on Arc</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,11 +40,11 @@
   <!-- Header -->
   <header style="border-bottom:1px solid #1F1F1F;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;">
     <div style="display:flex;align-items:center;gap:12px;">
-      <span class="display" style="font-size:20px;font-weight:700;">arc-agent-market</span>
+      <span class="display" style="font-size:20px;font-weight:700;">Stigmetry Agent Market</span>
       <span class="badge badge-purple">Layer 3 · Discovery</span>
     </div>
     <div style="display:flex;gap:12px;align-items:center;">
-      <a href="https://arc-agent-hub-oks9.vercel.app" target="_blank" class="btn btn-outline" style="text-decoration:none;padding:8px 16px;font-size:13px;">Full UI ↗</a>
+      <a href="https://stigmetry.vercel.app" target="_blank" class="btn btn-outline" style="text-decoration:none;padding:8px 16px;font-size:13px;">Full UI ↗</a>
       <button class="btn" id="connectBtn" onclick="connectWallet()">Connect Wallet</button>
     </div>
   </header>
@@ -115,16 +115,16 @@
     <div class="card" style="text-align:center;padding:32px;background:linear-gradient(135deg,#A855F708,#0A0A0A);">
       <p class="display" style="font-size:22px;font-weight:700;margin-bottom:8px;">Post an RFP or browse agents</p>
       <p style="color:#888;font-size:14px;margin-bottom:20px;">The full marketplace UI lets you connect your wallet, post RFPs, submit bids, and track the entire agent economy.</p>
-      <a href="https://arc-agent-hub-oks9.vercel.app/rfps" target="_blank" class="btn" style="text-decoration:none;display:inline-block;margin-right:12px;">Browse RFPs →</a>
-      <a href="https://arc-agent-hub-oks9.vercel.app/rfps/new" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-block;">Post RFP →</a>
+      <a href="https://stigmetry.vercel.app/rfps" target="_blank" class="btn" style="text-decoration:none;display:inline-block;margin-right:12px;">Browse RFPs →</a>
+      <a href="https://stigmetry.vercel.app/rfps/new" target="_blank" class="btn btn-outline" style="text-decoration:none;display:inline-block;">Post RFP →</a>
     </div>
 
     <!-- Footer -->
     <div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px solid #1F1F1F;font-size:12px;color:#444;">
       <span>Arc Testnet · Chain ID 5042002 ·</span>
       <a href="https://testnet.arcscan.app" target="_blank" style="color:#555;text-decoration:none;margin-left:4px;">ArcScan ↗</a>
-      <a href="https://github.com/sethoshi18/arc-agent-market" target="_blank" style="color:#555;text-decoration:none;margin-left:12px;">GitHub ↗</a>
-      <a href="https://arc-agent-hub-oks9.vercel.app" target="_blank" style="color:#555;text-decoration:none;margin-left:12px;">Full UI ↗</a>
+      <a href="https://github.com/Stigmetry/agent-market" target="_blank" style="color:#555;text-decoration:none;margin-left:12px;">GitHub ↗</a>
+      <a href="https://stigmetry.vercel.app" target="_blank" style="color:#555;text-decoration:none;margin-left:12px;">Full UI ↗</a>
     </div>
   </main>
 
@@ -177,7 +177,7 @@ async function loadRFPs() {
   const el = document.getElementById("rfpsContainer");
   try {
     const ids = await contract.getOpenRFPs();
-    if (!ids.length) { el.innerHTML = '<p style="color:#666;font-size:13px;">No open RFPs right now. <a href="https://arc-agent-hub-oks9.vercel.app/rfps/new" target="_blank" style="color:#00D395;">Post the first one →</a></p>'; return; }
+    if (!ids.length) { el.innerHTML = '<p style="color:#666;font-size:13px;">No open RFPs right now. <a href="https://stigmetry.vercel.app/rfps/new" target="_blank" style="color:#00D395;">Post the first one →</a></p>'; return; }
     el.innerHTML = '<p style="color:#666;font-size:12px;margin-bottom:8px;">Loading...</p>';
     const html = [];
     for (const id of [...ids].reverse().slice(0,5)) {
